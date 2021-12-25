@@ -34,13 +34,95 @@
       
       <a href="index.html" class="btn btn-lg btn-primary btn-block" type="submit" role="button">Login</a>
 
-      <a href="registrierung.html" class="btn btn-lg btn-primary btn-block btn-info" role="button">Neu? Hier geht es zur Registrierung</a>
+     <button type="button" class="btn btn-lg btn-primary btn-block" data-toggle="modal" data-target="#BenuRegModal">Neu? Hier geht es zur Registrierung.</button>
 
 			<p class="mt-5 mb-3" style="color:white; font-size:0.6em;">&copy; 2020</p>
     </form>
 		
     </div>
   </div>
+  
+  <!-- Modal -->
+<div class="modal fade" id="BenuRegModal" tabindex="-1" role="dialog" aria-labelledby="BenuRegModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="BenuRegModalLabel">Als neuen Benutzer registrieren</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputVorname" style="color:white;"  >Vorname</label>
+          <input type="text" class="form-control" id="inputVorname" placeholder="Vorname">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputNachname" style="color:white;"  >Nachname</label>
+          <input type="text" class="form-control" id="inputNachname" placeholder="Nachname">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-10">
+          <label for="inputStrasse" style="color:white;"  >Straße</label>
+          <input type="text" class="form-control" id="inputStrasse" placeholder="Straßennamen">
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputHausnummer" style="color:white;"  >Hausnummer</label>
+          <input type="text" class="form-control" id="inputHausnummer" placeholder="Hausnr.">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <label for="inputPLZ" style="color:white;"  >Postleitzahl</label>
+          <input type="text" class="form-control" id="inputPLZ" placeholder="PLZ">
+        </div>
+        <div class="form-group col-md-9">
+          <label for="inputStadt" style="color:white;"  >Stadt</label>
+          <input type="text" class="form-control" id="inputStadt" placeholder="Stadt">
+        </div>
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputMail" style="color:white;"  >E-Mail</label>
+          <input type="email" class="form-control" id="inputMail" placeholder="E-Mail">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputTelefon" style="color:white;"  >Telefon</label>
+          <input type="text" class="form-control" id="inputTelefon" placeholder="Telefonnummer">
+        </div>
+      </div>
+
+      <p style="color:black;font-size: 0.9em; text-align: center;margin-top:2em;"><b>Hinweis: <br/>Bitte definieren Sie in den nachfolgenden Feldern Ihr Passwort. Die <u>Kombination</u> aus <u>E-Mailadresse</u> und <u>Passwort</u> wird für den Seiten-Login verwendet.</b>    </p>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Passwort</span>
+        </div>
+        <input type="password" class="form-control" placeholder="Passwort" aria-label="Passwort" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Passwort</span>
+        </div>
+        <input type="password" class="form-control" placeholder="Passwort wiederholen" aria-label="PasswortWiederholen" aria-describedby="basic-addon1">
+      </div>
+
+    </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+  
 </div>
 	
     <!-- Optional JavaScript -->

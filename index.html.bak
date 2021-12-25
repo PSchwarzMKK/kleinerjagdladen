@@ -85,7 +85,7 @@
 
 
 <!-- Modal - Neukundenanlage start-->
-<div class="modal fade" id="NeuKundeErfassenModal" tabindex="-1" role="dialog" aria-labelledby="NeuKundeErfassenModal" aria-hidden="true">
+<div class="modal fade" id="BenuRegModal" tabindex="-1" role="dialog" aria-labelledby="NeuKundeErfassenModal" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">

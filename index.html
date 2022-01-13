@@ -106,6 +106,9 @@
           <input type="text" class="form-control" id="inputNachname" placeholder="Nachname">
         </div>
       </div>
+	  
+	  <p>Meldeadresse</p>
+	  
       <div class="form-row">
         <div class="form-group col-md-10">
           <label for="inputStrasse" style="color:white;"  >Straße</label>
@@ -137,6 +140,50 @@
           <input type="text" class="form-control" id="inputTelefon" placeholder="Telefonnummer">
         </div>
       </div>
+	  
+  <p style="color:black;font-size: 0.9em; text-align: center;margin-top:2em;"><b>Versandadresse</b>    </p>
+  
+	<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onchange="toggleCheckbox(this)" checked>
+  <label class="form-check-label" for="flexCheckDefault"> Versandadresse entspricht Meldeadresse</label>
+</div>
+	  
+	  <script>
+	  function toggleCheckbox(element){
+ if (element.checked){
+		alert('gewählt');
+	}
+	else {
+		alert('nicht gewählt');
+		document.write('
+		
+		 <div class="form-row">
+        <div class="form-group col-md-10">
+          <label for="inputStrasse" style="color:white;"  >Straße</label>
+          <input type="text" class="form-control" id="inputStrasse" placeholder="Straßennamen">
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputHausnummer" style="color:white;"  >Hausnummer</label>
+          <input type="text" class="form-control" id="inputHausnummer" placeholder="Hausnr.">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <label for="inputPLZ" style="color:white;"  >Postleitzahl</label>
+          <input type="text" class="form-control" id="inputPLZ" placeholder="PLZ">
+        </div>
+        <div class="form-group col-md-9">
+          <label for="inputStadt" style="color:white;"  >Stadt</label>
+          <input type="text" class="form-control" id="inputStadt" placeholder="Stadt">
+        </div>
+      </div>
+	}
+}
+
+	  </script>
+	  
+	  
+	    
 
       <p style="color:black;font-size: 0.9em; text-align: center;margin-top:2em;"><b>Hinweis: <br/>Bitte definieren Sie in den nachfolgenden Feldern Ihr Passwort. Die <u>Kombination</u> aus <u>E-Mailadresse</u> und <u>Passwort</u> wird für den Seiten-Login verwendet.</b>    </p>
 

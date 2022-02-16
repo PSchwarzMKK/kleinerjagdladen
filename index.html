@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="css/advabit.css">
 	
     <title>Der kleine Jagdladen - Verwaltung von Wilderzeugnissen</title>
+
+    
   </head>
   <body style="background: black url(img/background.jpg) no-repeat top center fixed; background-size: contain;">
   
@@ -146,44 +148,36 @@
   <p style="color:black;font-size: 0.9em; text-align: center;margin-top:2em;"><b>Versandadresse</b>    </p>
   
 	<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onchange="toggleCheckbox(this)" checked>
-  <label class="form-check-label" for="flexCheckDefault"> Versandadresse entspricht Meldeadresse</label>
-</div>
-	  
-	  <script>
-	  function toggleCheckbox(element){
- if (element.checked){
-		alert('gewählt');
-	}
-	else {
-		alert('nicht gewählt');
-		document.write('
-		
-		 <div class="form-row">
-        <div class="form-group col-md-10">
-          <label for="inputStrasse" style="color:white;"  >Straße</label>
-          <input type="text" class="form-control" id="inputStrasse" placeholder="Straßennamen">
-        </div>
-        <div class="form-group col-md-2">
-          <label for="inputHausnummer" style="color:white;"  >Hausnummer</label>
-          <input type="text" class="form-control" id="inputHausnummer" placeholder="Hausnr.">
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-3">
-          <label for="inputPLZ" style="color:white;"  >Postleitzahl</label>
-          <input type="text" class="form-control" id="inputPLZ" placeholder="PLZ">
-        </div>
-        <div class="form-group col-md-9">
-          <label for="inputStadt" style="color:white;"  >Stadt</label>
-          <input type="text" class="form-control" id="inputStadt" placeholder="Stadt">
-        </div>
-      </div>
-	}
-}
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+    <label class="form-check-label" for="flexCheckDefault"> Versandadresse entspricht Meldeadresse</label>
+  </div>
+  
 
-	  </script>
-	  
+  <div id="divshow" style="display:none">
+  <div class="form-row">
+    <div class="form-group col-md-10">
+      <label for="inputStrasse" style="color:white;"  >Straße</label>
+      <input type="text" class="form-control" id="inputStrasse" placeholder="Straßennamen">
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputHausnummer" style="color:white;"  >Hausnummer</label>
+      <input type="text" class="form-control" id="inputHausnummer" placeholder="Hausnr.">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="inputPLZ" style="color:white;"  >Postleitzahl</label>
+      <input type="text" class="form-control" id="inputPLZ" placeholder="PLZ">
+    </div>
+    <div class="form-group col-md-9">
+      <label for="inputStadt" style="color:white;"  >Stadt</label>
+      <input type="text" class="form-control" id="inputStadt" placeholder="Stadt">
+    </div>
+  </div>
+</div>
+
+
+
 	  
 	    
 
@@ -222,5 +216,15 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ 
+    <script type="text/javascript">
+  $('#flexCheckDefault').click(function(){
+   $('#divshow').toggle(this.checked);
+});
+    
+       </script>  
+ 
+ 
+ 
   </body>
 </html>

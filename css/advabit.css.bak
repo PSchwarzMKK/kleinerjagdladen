@@ -1,0 +1,10 @@
+h1{
+	color:red;
+}
+
+.table .thead-dark th {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #454d55;
+    font-size: 0.7em;
+}

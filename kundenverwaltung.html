@@ -1,116 +1,155 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,
+			shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- Advabit individual CSS -->
-	<link rel="stylesheet" href="css/advabit.css">
-	
-    <title>Der kleine Jagdladen - Kundenverwaltung</title>
-  </head>
-  <body style="background: black url(img/background.jpg) no-repeat top center fixed; background-size: contain;">
-  
-  <div class="container">
-  
-   <div class="row justify-content-center" style="margin-top:3%">
-    <div class="col-12" style="text-align:center; background: #e0e0e0; ">  
-		<h5 style="color:black;">Kundenverwaltung</h5>
-		<br/>
-		
-		<table class="table table-striped" style="opacity: 1;">
-		  <thead class="thead-dark" style="opacity: 1;">
-			<tr>
-			  <th scope="col">#</th>
-			  <th scope="col">Vornamen</th>
-			  <th scope="col">Nachnamen</th>
-			  <th scope="col">MDA-Straße</th>
-			   <th scope="col">MDA - Hausnr.</th>
-			  <th scope="col">MDA - PLZ</th>
-			  <th scope="col">E-Mail</th>
-			  <th scope="col">Telefon</th>
-			  <th scope="col">VA - Straße</th>
-			  <th scope="col">VA - Hausnr.</th>
-			  <th scope="col">VA - PLZ</th>
-			  <th scope="col">VA - Stadt</th>
-			  <th scope="col">Edit</th>
-			</tr>
-		  </thead>
-		  <tbody>
-			<tr>
-			  <th scope="row">1</th>
-			  <td>Mark</td>
-			  <td>Otto</td>
-			  <td>@mdo</td>
-			  <td>Mark</td>
-			  <td>Otto</td>
-			  <td>@mdo</td>
-			  <td>Otto</td>
-			  <td>@mdo</td>
-			  <td>@mdo</td>
-			  <td>@mdo</td>
-			  <td>@mdo</td>
-			  
-			</tr>
-			<tr>
-			  <th scope="row">2</th>
-			  <td>Mark</td>
-			  <td>Otto</td>
-			  <td>@mdo</td>
-			  <td>Mark</td>
-			  <td>Otto</td>
-			  <td>@mdo</td>
-			  <td>@mdo</td>
-			  <td>Otto</td>
-			  <td>@mdo</td>
-			  <td>@mdo</td>
-			  <td>@mdo</td>
-			</tr>
-			<tr>
-			  <th scope="row">3</th>
-			  <td>Mark</td>
-			  <td>Otto</td>
-			  <td>@mdo</td>
-			  <td>Mark</td>
-			  <td>Otto</td>
-			  <td>@mdo</td>
-			  <td>@mdo</td>
-			  <td>Otto</td>
-			  <td>@mdo</td>
-			  <td>@mdo</td>
-			  <td>@mdo</td>
-			</tr>
-		  </tbody>
-		</table>
+		<!-- Bootstrap CSS -->
 
-		<div style="margin-bottom:0.5em;">
-            <a href="index.html" class="btn btn-secondary" type="submit" role="button">Close</a>
-            <a href="index.html" class="btn btn-primary" type="submit" role="button">Save changes</a>
-        </div>
-			
-    </div>
+		<!-- Advabit individual CSS -->
+		<link rel="stylesheet" href="css/advabit.css">
+		<!-- Table Search -->
+		<link rel="stylesheet"
+			href="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+		<link rel="stylesheet"
+			href="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.css">
+		<title>Der kleine Jagdladen - Kundenverwaltung</title>
+	</head>
+	<body style="background: black url(img/background.jpg) no-repeat top center
+		fixed; background-size: contain;">
 
-  </div>
+		<div class="container">
 
-  
-   <div class="row justify-content-center" style="margin-top: 1%;">
-	<div class="col-6" style="text-align:right; background: gray; opacity: 0.95;">
-		<a href="login.html" style="font-weight:bold; color:white; font-size:0.8em;">Abmelden</a>
-		</p>
-	</div>
-</div>
+			<div class="row justify-content-center" style="margin-top:3%">
+				<div class="col-12" style="text-align:center; background: #e0e0e0;">
+					<h5 style="color:black;">Kundenverwaltung</h5>
+					<br/>
+
+						<table class="table table-striped" style="opacity: 1;" data-toggle="table"
+							data-filter-control="true" data-show-search-clear-button="true">
+							<thead class="thead-dark" style="opacity: 1;">
+								<tr>
+									<th scope="col">#</th>
+									<th data-field="Vornamen" data-filter-control="input" scope="col">Vornamen</th>
+									<th scope="col">Nachnamen</th>
+									<th scope="col">MDA-Straße</th>
+									<th scope="col">MDA - Hausnr.</th>
+									<th scope="col">MDA - PLZ</th>
+									<th scope="col">E-Mail</th>
+									<th scope="col">Telefon</th>
+									<th scope="col">VA - Straße</th>
+									<th scope="col">VA - Hausnr.</th>
+									<th scope="col">VA - PLZ</th>
+									<th scope="col">VA - Stadt</th>
+									<th scope="col">Edit</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+									<td>@mdo</td>
+								</tr>
+							</tbody>
+						</table>
 
 
+						<div style="margin-bottom:0.5em;">
+							<a href="index.html" class="btn btn-secondary" type="submit"
+								role="button">Close</a>
+							<a href="index.html" class="btn btn-primary" type="submit" role="button">Save
+								changes</a>
+						</div>
 
-</div>
-	
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+						<p style="font-size: 0.7em; text-align: left;">MDA = Meldeadresse / VA =
+							Versandadresse</p>
+
+					</div>
+
+				</div>
+
+
+				<div class="row justify-content-center" style="margin-top: 1%;">
+					<div class="col-6" style="text-align:right; background: gray; opacity:
+						0.95;">
+						<a href="login.html" style="font-weight:bold; color:white;
+							font-size:0.8em;">Abmelden</a>
+					</p>
+				</div>
+			</div>
+
+
+
+		</div>
+
+		<!-- Optional JavaScript -->
+		<script>
+        $(function() {
+          $('#table').bootstrapTable()
+        })
+      </script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+		<script
+			src="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.js"></script>
+		<script
+			src="https://unpkg.com/bootstrap-table@1.20.2/dist/extensions/filter-control/bootstrap-table-filter-control.min.js"></script>
+		<!-- Optional JavaScript -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"></script>
+		<!-- Hide/Unhide Versandadresse -->
+		<script type="text/javascript">
+    $('#flexCheckDefault').click(function () {
+      $('#divshow').toggle(this.unchecked);
+    });
+  </script>
+	</body>
 </html>
